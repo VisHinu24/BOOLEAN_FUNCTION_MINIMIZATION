@@ -1,5 +1,5 @@
 # BOOLEAN_FUNCTION_MINIMIZATION
-
+Developed by: 212223220124
 **AIM:**
 
 To implement the given logic function verify its operation in Quartus using Verilog programming.
@@ -35,18 +35,34 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+## F1
+```
+module exp2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1= ( (~b & ~d) | (~a & b & d) | (a & b & ~c));
+endmodule
+```
+## F2
+```
+module exp1(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2 = ( (~y & z)| (x & y) | (w & y) );
+endmodule
+```
+
+## RTL realization
+
+![Screenshot 2024-09-13 094716](https://github.com/user-attachments/assets/650fad80-a2c2-4c69-ac58-7eee7826e271)
+![Screenshot 2024-09-20 082303](https://github.com/user-attachments/assets/004fdab8-b39e-4119-bf02-b7fc9c586353)
+
+## Output:
+![Screenshot 2024-09-13 095122](https://github.com/user-attachments/assets/314b1a55-5374-417e-947d-a4457e39f5f0)
+![Screenshot 2024-09-20 082718](https://github.com/user-attachments/assets/583fb700-ce78-4822-86c0-db1a7233e0b1)
 
 
-**RTL realization**
-
-**Output:**
-
-**RTL**
-
-**Timing Diagram**
-
-**Result:**
+## Result:
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
